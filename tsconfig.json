@@ -1,0 +1,31 @@
+{
+  /** This config turn into a base config to be extended for  server, browser, electron... **/
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* Enable strict null checks. */,
+    "strictFunctionTypes": true /* Enable strict checking of function types. */,
+    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"],
+    "files": true,
+    "compilerOptions": {
+      "noImplicitAny": false /* Raise error on expressions and declarations with an implied 'any' type. */,
+      "strictNullChecks": false /* Enable strict null checks. */,
+      "strictFunctionTypes": false /* Enable strict checking of function types. */
+    }
+  }
+}
